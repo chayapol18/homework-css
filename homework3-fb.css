@@ -1,0 +1,278 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-content {
+    padding-bottom: 132px;
+}
+
+.head-content {
+    margin: -15px auto 0;
+    width: 396px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-content h2{
+    font-size: 50px;
+    color: #1877f2;
+    margin-bottom: 0;
+}
+
+.head-content p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.register-box {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 396px;
+    height: 320px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #1877f2;
+    border-radius: 6px;
+}
+
+.register-box > * {
+    font-size: 15px;
+}
+
+.all-input {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin: 5px 0;
+}
+
+.all-input * {
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid #dadde1;
+    margin: 5px 0;
+}
+
+.login-button {
+    background-color: #1877f2;
+    border: 1px solid #a8ccfa;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #176edf;
+    cursor: pointer;
+}
+
+.forget-password {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+    color: #1877f2;
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.line-zone {
+    border-bottom: 1px solid #dadde1;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.new-register {
+    font-size: 16px;
+    font-weight: 800;
+    padding: 14px 1px;
+    margin-top: 15px;
+    background-color: #42b72a;
+    border-radius: 6px;
+    width: 40%;
+    color: white;
+    border: none;
+  outline: 0;
+}
+
+.new-register:hover {
+    background-color: #3faa29;
+    cursor: pointer;
+}
+
+.create-page {
+    font-size: 15px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.create-page span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-content {
+    background-color: white;
+    color: grey;
+    font-size: 14px;
+    padding: 5px 50px 10px;
+    margin: 0 auto;
+}
+
+.language {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.footer-content hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dadde1 ;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.detail-fb {
+    margin-top: 10px;
+}
+
+.year-facebook {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-content {
+        padding: 120px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-end;
+    }
+
+    .head-content {
+        align-items: flex-start;
+        margin-right: 15vh;
+        margin-bottom: 80px;
+    }
+
+    .head-content p {
+        text-align: start;
+    }
+    
+    .footer-content {
+        background-color: white;
+        color: grey;
+        font-size: 14px;
+        padding: 5px 50px 20px;
+        margin: 0 auto;
+    }
+}
+
+.register-box:hover {
+    animation: background-change;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+@keyframes background-change {
+    0% {
+      background-color: #000000;
+    }
+    25%{
+        background-color: #555;
+    }
+    50% {
+        background-color: #aaa;
+    }
+    75% {
+        background-color: #ccc;
+    }
+    100% {
+        background-color: #fff;
+    }
+}
+
+.head-content h2:hover {
+    animation: rainbow-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rainbow-text {
+        0% {
+            color: orange;
+            transform: rotate(0deg);
+        }	
+        10% {
+            color: purple;
+        }	
+        20% {
+            color: red;
+        }
+        30% {
+            color: CadetBlue;
+        }
+        40% {
+            color: yellow;
+        }
+        50% {
+            color: coral;
+            transform: rotate(360deg);
+        }
+        60% {
+            color: green;
+        }
+        70% {
+            color: cyan;
+        }
+        80% { 
+            color: DeepPink;
+        }
+        90% { 
+            color: DodgerBlue;
+        }
+        100% { 
+            color: orange;
+            transform: rotate(0deg);
+        }
+}
